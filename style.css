@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin: 0 auto;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+h3 {
+  font-size: 72px;
+  text-align: center;
+  color: white;
+}
+
+hr{
+  width: 100%;
+  margin: 20px auto;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('https://fon.litrelax.ru/uploads/posts/2023-03/1677743302_foni-club-p-dnd-art-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#t{
+  text-align: center;
+  color: white;
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#d4,
+#d6,
+#d8,
+#d10,
+#d12,
+#d20,
+#d100 {
+  max-width: 100%;
+  height: auto;
+}
+
+#text-d4,
+#text-d6,
+#text-d8,
+#text-d10,
+#text-d12,
+#text-d20,
+#text-d100 {
+  font-weight: bold;
+  color: white;
+}
+
+#rollButton{
+  width: 200px; 
+  height: 50px; 
+  font-size: 18px; 
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#numDice {
+  width: 100px;
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+#result{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center; 
+}
+
+#summa{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#result, #summa {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2px;
+  background-color: violet; 
+  padding: 10px; 
+  border: 2px solid black; 
+  border-radius: 5px; 
+  text-align: center; 
+  color: black; 
+  margin: 10px auto;
+}
