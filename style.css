@@ -31,7 +31,8 @@ body{
 
 #t{
   text-align: center;
-  color: white;
+  color: black;
+  background-color: violet; 
 }
 
 .image-container {
@@ -121,34 +122,12 @@ body{
   margin: 10px auto;
 }
 
-@media screen and (max-width: 768px) {
-  h3 {
-    font-size: 48px; 
-  }
-  
+@media only screen and (max-width: 1745px) and (max-height: 818px) {
   #rollButton {
-    width: 150px; 
-    height: 40px; 
-    font-size: 16px; 
+    bottom: 100px; 
   }
-  
-  #numDice {
-    font-size: 20px; 
-  }
-}
 
-@media screen and (max-width: 480px) {
-  h3 {
-    font-size: 36px; 
-  }
-  
-  #rollButton {
-    width: 120px; 
-    height: 30px; 
-    font-size: 14px; 
-  }
-  
   #numDice {
-    font-size: 18px; 
+    top: calc(100% + 140px); 
   }
 }
