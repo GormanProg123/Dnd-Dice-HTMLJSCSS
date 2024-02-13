@@ -120,3 +120,35 @@ body{
   color: black; 
   margin: 10px auto;
 }
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 48px; 
+  }
+  
+  #rollButton {
+    width: 150px; 
+    height: 40px; 
+    font-size: 16px; 
+  }
+  
+  #numDice {
+    font-size: 20px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 36px; 
+  }
+  
+  #rollButton {
+    width: 120px; 
+    height: 30px; 
+    font-size: 14px; 
+  }
+  
+  #numDice {
+    font-size: 18px; 
+  }
+}
